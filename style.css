@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*:root {
+    --navbar-height: 59px;
+}*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(21 1 1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo{
+    margin: 34px 45px;
+}
+
+#logo img{
+    height: 130px;
+    margin: -11px -4px;
+}
+
+#navbar ul{
+    display: flex ;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 540px;
+    justify-content: center;
+    align-items:center ;
+}
+
+#home::before{
+    content: "";
+    background: url(img4.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 96%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services {
+    margin: 30px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 27px;
+    margin: 3px 15px;
+    border-radius: 28px;
+    background-color: #ece6e6;
+    transition: 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 40px - 10px rgba(0,0,0,0.5);
+} 
+
+#services .box img {
+    height: 200px;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* Clients Section*/
+#client-section {
+    position: relative;
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+    transition: 0.3s;
+}
+
+#clients img {
+    height: 125px;    
+}
+
+.client-item:hover {
+    transform: scale(1.20);
+    box-shadow: 0 0 40px - 10px rgba(0,0,0,0.5);
+}
+
+/*utility class*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}  
