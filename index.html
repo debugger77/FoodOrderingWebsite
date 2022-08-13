@@ -6,91 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onlinemeals.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1190px)" href="phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="logo.png" alt="Onlinemeals.com">
+            <img src="img/logo.png" alt="Onlinemeals.com">
         </div>
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">AboutUs</a></li>
-            <li class="item"><a href="#">Contact</a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="#ser">Services</a></li>
+            <li class="item"><a href="about.html">AboutUs</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+            <li class="cart"><a href="cart.html">Cart:<span style="color:rgb(243, 10, 10)"> 0</span>
+            </a></li>
         </ul>
     </nav>
 
     <section id="home">
-        <h1 class="h-primary">Welcome to Online Meals</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsa,
-             placeat recusandae autem. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             </p>
-        <button class="btn">Order Now</button>
+        <h1 class="h-primary" id="ser">Welcome to Online Meals</h1>
+        <p>Discover the amazing food & drinks</p>
+        <p>Serving Happiness and Deliciousness</p>
+        <a href="#ser">
+            <button class="btn">Order Now</button>
+        </a>
     </section>
 
-    <section class="services-container">
+    <section class="services-container" id="ser">
         <h1 class="h-primary center">Our Services</h1>
-        <div id="services">
+        <div id="services" >
             <div class="box">
-                <img src="img/img1.jpg" alt="">
-                <h2 class="h-secondary center">Food Catering</h2>
-                <p class ="center">Lorem ipsum dolor, sit amet consectetur.
-                    Ducimus vel sequi iure eius, animi.
-                    Minus sed maiores molestiae animi vel.
-                    In, at eveniet autem enim sed impedit!</p>
+                <a href="starter.html">
+                <img src="img/starter/starter.jpg" alt="">
+                <h2 class="h-secondary center" >Starter</h2>
+                <p class ="center">Hot and Crispy</p>
+                </a>
             </div>
             <div class="box">
-                <img src="img/img2.jpg" alt="">
-                <h2 class="h-secondary center">Bulk Ordering</h2>
-                <p class ="center">Lorem ipsum dolor, sit amet consectetur.
-                    Ducimus vel sequi iure eius, animi.
-                    Minus sed maiores molestiae animi vel.
-                    In, at eveniet autem enim sed impedit!</p>
+                <a href="main.html">
+                <img src="img/main/main.webp" alt="">
+                <h2 class="h-secondary center">Main Course</h2>
+                <p class ="center">Savoury And Delicious</p>
+                 </a>
             </div>
             <div class="box">
-                <img src="img/img3.jpg" alt="">
-                <h2 class="h-secondary center">Food Ordering</h2>
-                <p class ="center">Lorem ipsum dolor, sit amet consectetur.
-                    Ducimus vel sequi iure eius, animi.
-                    Minus sed maiores molestiae animi vel.
-                    In, at eveniet autem enim sed impedit!</p>
+                <a href="bread.html">
+                <img src="img/roti/roti.jpg" alt="">
+                <h2 class="h-secondary center">Breads</h2>
+                <p class ="center">Piping Hot</p>
+                </a>
             </div>
+            <div class="box">
+                <a href="dessert.html">
+                <img src="img/desert/dessert.jpg" alt="">
+                <h2 class="h-secondary center">Desserts</h2>
+                <p class ="center">Icing on the cake</p>
+                </a>
+            </div>
+
         </div>
     </section>
+
     <section id="client-section">
         <h1 class="h-primary center">Our Clients</h1>
         <div id="clients">
             <div class="client-item">
-                <img src="logo1.png" alt="Our Client">
+                <img src="https://img.icons8.com/color/144/000000/mac-os--v1.png"/>
             </div>
             <div class="client-item">
-                <img src="logo2.png" alt="Our Client">
+                <img src="https://img.icons8.com/ios-filled/100/000000/amazon.png"/>
             </div>
             <div class="client-item">
-                <img src="logo3.png" alt="Our Client">
+                <img src="https://img.icons8.com/ios-filled/100/000000/hp--v1.png"/>
             </div>
             <div class="client-item">
-                <img src="logo4.png" alt="Our Client">
+                <img src="https://img.icons8.com/ios-filled/100/000000/skype.png"/>
             </div>
             <div class="client-item">
-                <img src="logo5.png" alt="Our Client">
+                <img src="https://img.icons8.com/color/96/000000/microsoft.png"/>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
+    <!-- <section id="contact">
+        <h1  class="h-primary center">Contact Us</h1>
         <div id="conatct-box">
             <form action="">
                 <div class="form-group">
                     <label for="name">Name: </label>
-                    <input type="text" name="name" id=""name
-                    placeholder="Enter your name">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email: </label>
+                    <input type="email" name="name" id="name" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone No. : </label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your phone no.">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+    </div>
+        <script src="starter.js" ></script>
+        <script src="main.js" ></script>
+        <script src="bread.js"></script>
+        <script src="dessert.js"></script>
+    </div>
 </body>
 </html>
