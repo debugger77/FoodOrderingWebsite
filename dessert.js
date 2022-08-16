@@ -111,14 +111,11 @@ function displayCart() {
             `
         });
         productContainer.innerHTML += `
-    <div class ="basketTotalContainer">
+        <div class ="basketTotalContainer">
         <h4 class="basketTotalTitle">
-            Total Amount 
+            To Pay:__________________________________________________Rs.${cartCost}.00
         </h4>
-        <h4 class ="basketTotal">
-            Rs.${cartCost}.00
-        </h4>
-        `
+    </div> `
     }
 }
 
